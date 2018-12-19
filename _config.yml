@@ -17,8 +17,8 @@ title: Dark Acre Church
 email: darkacrejack@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Church description
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/churchsite" # the subpath of your site, e.g. /blog
+url: "https://darkacrejack.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: darkacrejack 
 github_username:  darkacrejack
 
