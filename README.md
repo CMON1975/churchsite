@@ -14,4 +14,6 @@ Data updates and load to website modules performed from a Google Sheets spreadsh
 
 Some quantification functions: total number of games reviewed, total numbers for different Jack decisions.
 
-Rewards page: secondary page that shows the current games available for Patience Credit redemptions, along with each game's relevant store page metadata (price, summary, screenshots?, trailer?), link to store page. Includes a section for redemption instructions and also explanation of how Patience Credits are earned.
+Rewards page: secondary page that shows the current games available for Patience Credit redemptions, along with each game's relevant store page metadata (price, summary, screenshots?, trailer?), link to store page. Includes a section for redemption instructions and also explanation of how Patience Credits are earned. Also if a given reward has been seen in Church, and the video is available, a link to that on-site.
+
+Stretch goal to above: ability to redeem a "Patience Credits" game from the site and send an alert via Streamlabs to a live broadcast.
