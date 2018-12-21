@@ -29,3 +29,8 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "faraday", "~> 0.15.4"
+gem "diffy", "~> 3.2.1"
+gem "rainbow", "~> 3.0.0"
+
+gem "rake", "~> 12.3.2"
+gem "rspec", "~> 3.8.0"

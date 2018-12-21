@@ -3,28 +3,38 @@ layout: default
 ---
 <div class="post episode">
     <header class="post-header">
+        <a href="{{ "/" | prepend: site.baseurl }}">Back to Home</a>
         <h1 class="post-title">{{ page.title }}</h1>
     </header>
     <article class="post-content">
-        {{ page.date }}
+        {{ content | markdownify }}
 
-        {{ content }}
+        <h2>Games List</h2>
 
-        {% for game in page.games %}
-        <li>
-            {{ game.title }} -
-            {% if game.decision == "W" %}
-            <b>[Wishlisted]</b>
-            {% elsif game.decision == "F" %}
-            <b>[Followed]</b>
-            {% elsif game.decision == "I" %}
-            <b>[Ignored]</b>
-            {% elsif game.decision == "O" %}
-            <b>[Thumbs Down]</b>
-            {% else %}
-            [No Decision Made]
-            {% endif %}
-        </li>
-        {% endfor %}
+        <ol>
+            {% for game in page.games %}
+            <li>
+                {{ game.name }} -
+                {% if game.decision == "W" %}
+                <b>[Wishlisted]</b>
+                {% elsif game.decision == "F" %}
+                <b>[Followed]</b>
+                {% elsif game.decision == "I" %}
+                <b>[Ignored]</b>
+                {% elsif game.decision == "O" %}
+                <b>[Thumbs Down]</b>
+                {% else %}
+                [No Decision Made]
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ol>
+
+        <hr />
+
+        <h2>Meta</h2>
+
+        <p>Date: {{ page.date | date_to_string }}</p>
+        <p>Show: {{ page.show_name | capitalize}}</p>
     </article>
 </div>
