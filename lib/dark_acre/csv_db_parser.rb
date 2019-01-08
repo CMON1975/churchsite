@@ -4,9 +4,9 @@ require "dark_acre/episode_game"
 module DarkAcre
   class CsvDbParser
     def parse(csv)
+      episodes = csv.map do |row|
+        next nil if row[0].nil?
 
-
-      csv.map do |row|
         Episode.new(
           row[5],
           row[4].downcase,
@@ -16,6 +16,8 @@ module DarkAcre
           parse_games(row)
         )
       end
+
+      episodes.compact
     end
 
     def parse_games(row)

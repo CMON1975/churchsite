@@ -35,7 +35,7 @@ task :generate do
 
     episode_md = episode.to_yaml + "---\n"
 
-    if File.zero?(episode_path)
+    if !File.exists?(episode_path) || File.zero?(episode_path)
       total_added += 1
     else
       existing_episode = File.read(episode_path)
