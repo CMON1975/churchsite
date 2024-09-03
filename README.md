@@ -28,3 +28,5 @@ Right frame is a video preview pane (720x480?) that loads the YouTube archive (i
 
 #### Stretch goal to above:
 ability to redeem a "Patience Credits" game from the site and send an alert via Streamlabs to a live broadcast.
+
+## Contributing
